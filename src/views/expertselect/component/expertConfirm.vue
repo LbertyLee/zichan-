@@ -80,8 +80,8 @@ export default {
     async handleConfirm(row, status) {
       row.status = status;
       const res = await updateExpertStatus({
-        project_id: this.processId,
-        judge_id: row.id,
+        projectId: this.processId,
+        judgeId: row.id,
         state: status,
         remarks: row.remark
       })
